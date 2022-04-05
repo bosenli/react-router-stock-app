@@ -1,9 +1,17 @@
 import { useParams } from "react-router-dom";
 import axios from "axios";
 import { useState, useEffect } from "react";
-import "./moreInfo.css";
+import "../App.css";
 
-function MoreInfo() {
+// stock symbol
+// full company name
+// primary exchange
+// latest price
+// 52 week high price
+// 52 week low price
+// market cap
+
+function Detail() {
   const { symbol } = useParams();
   const [data, setData] = useState({});
 
@@ -26,7 +34,7 @@ function MoreInfo() {
 
   console.log(data);
   return (
-    <div className="moreInfo">
+    <div className="detail">
       <h1>Stock Symbol: {data.symbol}</h1>
       <p>Company Name: {data.companyName}</p>
       <p>Primary Exchange: {data.primaryExchange}</p>
@@ -38,12 +46,5 @@ function MoreInfo() {
   );
 }
 
-export default MoreInfo;
+export default Detail;
 
-// stock symbol
-// full company name
-// primary exchange
-// latest price
-// 52 week high price
-// 52 week low price
-// market cap

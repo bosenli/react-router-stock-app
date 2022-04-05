@@ -1,4 +1,4 @@
-import fetchData from "./constants";
+import fetchData from "../constants/constants";
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 

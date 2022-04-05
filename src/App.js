@@ -2,7 +2,7 @@ import "./App.css";
 import Home from "./components/Home";
 import Search from "./components/Search";
 import NoMatch from "./components/NoMatch";
-import MoreInfo from "./components/Detail";
+import Detail from "./components/Detail";
 import { NavLink, Route, Routes } from "react-router-dom";
 
 //npm i axios react-router-dom routers
@@ -17,7 +17,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/search" element={<Search />} />
-        <Route path="/search/:symbol" element={<MoreInfo />} />
+        <Route path="/search/:symbol" element={<Detail />} />
         <Route path="*" element={<NoMatch />} />
       </Routes>
     </div>
