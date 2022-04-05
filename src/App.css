@@ -36,3 +36,26 @@
     transform: rotate(360deg);
   }
 }
+
+
+.stock {
+  background-color: black;
+  border: white solid 2px;
+  width: 450px;
+  height: 180px;
+  margin-left: 10%;
+  color: white;
+}
+
+.right {
+  margin-right: 400px;
+}
+
+.small {
+  font-size: small;
+  margin-right: 400px;
+}
+
+.moreInfo {
+  border: black solid 4px;
+}
